@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Quiz App</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="quiz-favicon.jpg" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="start-btn">
+      <button>start quiz</button>
+    </div>
+
+    <div class="quiz-rules">
+      <h2>some rules of this quiz</h2>
+      <div class="instructions">
+        <p>1. you will have only <span>15 seconds</span> per each questions</p>
+        <p>2. you can't exit your quiz while you playing</p>
+      </div>
+      <div class="buttons">
+        <button class="exit-quiz">exit quiz</button>
+        <button class="continue-quiz">continue</button>
+      </div>
+    </div>
+
+    <!-- When User Decide To Continue In Quiz -->
+    <div class="question-area">
+      <div class="header">
+        <p class="category"></p>
+        <div class="time-left">
+          <span>time left</span>
+          <span class="seconds"></span>
+        </div>
+      </div>
+
+      <div class="question-title">
+        <h3></h3>
+      </div>
+
+      <div class="answers-area"></div>
+
+      <div class="bullets">
+        <div class="spans"></div>
+        <button class="submit-and-continue">continue</button>
+      </div>
+    </div>
+
+    <div class="result">
+      <h4>
+        you have completed this quiz, your result is <br />
+        <span class="the-result"></span>
+      </h4>
+      <div class="buttons">
+        <button class="repeat-quiz">retry quiz</button>
+        <button class="finish-quiz" title="quit quiz and leave the quiz page">
+          quit quiz
+        </button>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="/js/main.js"></script>
+  </body>
+</html>
