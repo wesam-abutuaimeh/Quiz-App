@@ -25,7 +25,7 @@ leaveQuiz.addEventListener("click", () => {
 continueQuiz.addEventListener("click", () => {
   quizRules.classList.remove("show-rules");
   quizQuestions.classList.add("showQuestion-area");
-  questionDuration(15, "/js/questions.json".length);
+  questionDuration(15, "../js/questions.json".length);
 });
 
 repeatQuiz.addEventListener("click", () => {
@@ -76,7 +76,7 @@ function fetchQuestions() {
     }
   };
 
-  request.open("GET", "/js/questions.json");
+  request.open("GET", "../js/questions.json");
   request.send();
 }
 
